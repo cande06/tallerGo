@@ -1,0 +1,48 @@
+package main
+
+import "fmt"
+
+func main() {
+	// fmt.Println("Hola mundo")
+	unaVariable := "hola" //el entorno detecta el tipo automaticamente
+	//para evitar el mje de error, puedo imprimir la variable que no este siendo usada
+
+	var nombre string
+	nombre = "chau"
+	fmt.Println(unaVariable + nombre)
+
+	// for
+	for i := 0; i < 10; i++ {
+		fmt.Printf("nro:"%d, i)
+	}
+
+	//booleano
+
+	// lista
+	var list []string //declaración de arrays vacios
+	list = append(list, "hola", "chau")
+
+	listTwo := []string{ //arrays con ctd. definida
+		"uno",
+		"dos",
+		"tres",
+	}
+
+	m := map[string]string{
+		"key1": "valor1",
+	}
+
+	var m2 map[string]string
+	m2["key2"] = "value2"
+
+	asd, otraVar := m2["key2"] //otra var indica si la key se encuentra o no (bool)
+
+	//se puede recorrer con un foreach pero lo recorre desordenado
+
+	// FUNCIONES
+	simple()
+}
+
+func simple() {
+	fmt.Println("simple")
+}
