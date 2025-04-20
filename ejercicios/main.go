@@ -1,13 +1,15 @@
-package main
+package exerc1
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// cómo ingresan los datos? -> como en C !!
 
 	//## TEST ARRAYS
 	// scoringList := []int{2, 2, 3, 5, 4, 1, 2, 3, 4, 1}
-	// scoringList := []int{4, 3, 5, 5, 4, 3, 2, 5, 4, 1}
+	// scoringList := []int{4, 3, 5, 5, 4, 3, 2, 5, 4, 5}
 
 	//## INGRESO MANUAL
 	var score int
