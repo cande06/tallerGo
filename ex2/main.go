@@ -1,4 +1,4 @@
-package exerc2
+package main
 
 import (
 	"errors"
@@ -45,9 +45,9 @@ func (d *Dispositivo) Apagar() error {
 }
 
 func (d Dispositivo) EstadoActual() string {
-	if d.Estado {
-		return "Encendido"
-	} else {
+	if !d.Estado {
 		return "Apagado"
+	} else {
+		return "Encendido"
 	}
 }
